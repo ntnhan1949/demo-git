@@ -1,14 +1,14 @@
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #DB234B;
     padding: 20px 10px;
 }
 
 /* Style the header links */
 .header a {
     float: left;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -21,19 +21,17 @@
 .header a.logo {
     font-size: 25px;
     font-weight: bold;
-    color: #DB234B;
+    color: #ffffff;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
-    background-color: #F5E6E9;
-    color: black;
+    color: rgb(229, 155, 174);
 }
 
 /* Style the active/current link*/
 .header a.active {
-    background-color: #DB234B;
-    color: white;
+    color: rgb(229, 155, 174);
 }
 
 /* Float the link section to the right */

@@ -15,7 +15,7 @@ export default function New() {
     return (
         <div className="container-fluid">
             <div className="header">
-                <a onClick={() => changeValue("Demo_Git", 0)} href="#default" className="logo">Demo_Git</a>
+                <a onClick={() => changeValue("Demo_Git", -1)} className={`logo ${active === -1  ? "active" : ""}`} href="#default">Demo_Git</a>
                 <div className="header-right">
                     <a onClick={() => changeValue("Home", 0)} className={active === 0  ? "active" : ""} href="#home">Home</a>
                     <a onClick={() => changeValue("Contact", 1)} className={active === 1  ? "active" : ""} href="#contact">Contact</a>
