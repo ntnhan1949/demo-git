@@ -62,6 +62,5 @@ export default function Form() {
                 </div>
             </div>
         </section>
-
     )
 }
