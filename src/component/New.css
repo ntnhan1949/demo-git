@@ -21,17 +21,18 @@
 .header a.logo {
     font-size: 25px;
     font-weight: bold;
+    color: #DB234B;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
-    background-color: #ddd;
+    background-color: #F5E6E9;
     color: black;
 }
 
 /* Style the active/current link*/
 .header a.active {
-    background-color: dodgerblue;
+    background-color: #DB234B;
     color: white;
 }
 
@@ -50,4 +51,9 @@
     .header-right {
         float: none;
     }
+}
+
+.text {
+    color: #DB234B;
+    font-size: 24px;
 }
