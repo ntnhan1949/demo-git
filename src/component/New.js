@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './New.css';
 import New2 from './New2';
-import { Routes, Route, Link } from "react-router-dom";
 
 export default function New() {
 
@@ -26,9 +25,6 @@ export default function New() {
             </div>
 
             <New2 text={text} />
-            <Routes>
-                <Route path='/' element />
-            </Routes>
         </div>
     )
 }
