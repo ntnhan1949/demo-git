@@ -21,13 +21,13 @@ export default function New() {
                 <div className="header-right">
                     <Link onClick={() => changeValue("Home", 0)} className={active === 0  ? "active" : ""} to="/">Home</Link>
                     <Link onClick={() => changeValue("Contact", 1)} className={active === 1  ? "active" : ""} to="#contact">Contact</Link>
-                    <Link onClick={() => changeValue("Login", 2)} className={active === 2  ? "active" : ""} to="/login">Login</Link>
+                    <Link onClick={() => changeValue("Branch", 2)} className={active === 2  ? "active" : ""} to="/login">Branch</Link>
                 </div>
             </div>
             <New2 text={text} />
-            <Routes>
+            {/* <Routes>
                 <Route path='/' element={<New2 />} />
-            </Routes>
+            </Routes> */}
         </div>
     )
 }
