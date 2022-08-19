@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom';
 import './New.css';
 import New2 from './New2';
 
@@ -15,18 +14,18 @@ export default function New() {
 
     return (
         <div className="container-fluid">
+
             <div className="header">
-                <Link onClick={() => changeValue("Demo_Git", 0)} to="#default" className="logo">Demo_Git</Link>
+                <a onClick={() => changeValue("Demo_Git", -1)} className={`logo ${active === -1 ? "active" : ""}`} href="#default">Demo_Git</a>
                 <div className="header-right">
-                    <Link onClick={() => changeValue("Home", 0)} className={active === 0  ? "active" : ""} to="/">Home</Link>
-                    <Link onClick={() => changeValue("Contact", 1)} className={active === 1  ? "active" : ""} to="#">Contact</Link>
-                    <Link onClick={() => changeValue("Branch", 2)} className={active === 2  ? "active" : ""} to="#">Branch</Link>
+                    <a onClick={() => changeValue("Home", 0)} className={active === 0 ? "active" : ""} href="#home">Home</a>
+                    <a onClick={() => changeValue("Contact", 1)} className={active === 1 ? "active" : ""} href="#contact">Contact</a>
+                    <a onClick={() => changeValue("About", 2)} className={active === 2 ? "active" : ""} href="#about">About</a>
+                    <a onClick={() => changeValue("Branch", 3)} className={active === 3 ? "active" : ""} href="#branch">Branch</a>
                 </div>
-            </div>
-            <New2 text={text} />
-            {/* <Routes>
-                <Route path='/' element={<New2 />} />
-            </Routes> */}
+
+                <New2 text={text} />
+            </div >
         </div>
     )
 }
