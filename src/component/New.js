@@ -24,8 +24,9 @@ export default function New() {
                     <a onClick={() => changeValue("Branch", 3)} className={active === 3 ? "active" : ""} href="#branch">Branch</a>
                 </div>
 
-                <New2 text={text} />
+                
             </div >
+            <New2 text={text} />
         </div>
     )
 }
