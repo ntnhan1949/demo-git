@@ -27,7 +27,6 @@ export default function New() {
             <New2 text={text} />
             <Routes>
                 <Route path='/' element={<New2 />} />
-                <Route path='/login' element={<Form />} />
             </Routes>
         </div>
     )
