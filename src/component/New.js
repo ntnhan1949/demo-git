@@ -22,9 +22,9 @@ export default function New() {
                     <a onClick={() => changeValue("Contact", 1)} className={active === 1 ? "active" : ""} href="#contact">Contact</a>
                     <a onClick={() => changeValue("About", 2)} className={active === 2 ? "active" : ""} href="#about">About</a>
                 </div>
-            </div>
 
-            <New2 text={text} />
+                <New2 text={text} />
+            </div >
         </div>
     )
 }
